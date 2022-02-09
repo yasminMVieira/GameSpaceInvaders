@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="gameSpace:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/gameSpace_jar</output-path>
+    <root id="archive" name="gameSpace.jar">
+      <element id="module-output" name="gameSpace" />
+    </root>
+  </artifact>
+</component>
