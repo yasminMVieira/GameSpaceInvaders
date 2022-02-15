@@ -57,18 +57,18 @@ public class Inicio {
     }
 
     public void insereInimigos2() {
-        proces.addObjeto(new ObInimigo2(300, 50, 2, 0, 0, 5, proces, largura, altura));
-        proces.addObjeto(new ObInimigo2(250, 50, 2, 0, 0, 5, proces, largura, altura));
-        proces.addObjeto(new ObInimigo2(200, 50, 2, 0, 0, 5, proces, largura, altura));
-        proces.addObjeto(new ObInimigo2(150, 50, 2, 0, 0, 5, proces, largura, altura));
-        proces.addObjeto(new ObInimigo2(100, 50, 2, 0, 0, 5, proces, largura, altura));
-        proces.addObjeto(new ObInimigo2(50, 50, 2, 0, 0, 5, proces, largura, altura));
-        proces.addObjeto(new ObInimigo2(300, 100, 2, 0, 0, 5, proces, largura, altura));
-        proces.addObjeto(new ObInimigo2(250, 100, 2, 0, 0, 5, proces, largura, altura));
-        proces.addObjeto(new ObInimigo2(200, 100, 2, 0, 0, 5, proces, largura, altura));
-        proces.addObjeto(new ObInimigo2(150, 100, 2, 0, 0, 5, proces, largura, altura));
-        proces.addObjeto(new ObInimigo2(100, 100, 2, 0, 0, 5, proces, largura, altura));
-        proces.addObjeto(new ObInimigo2(50, 100, 2, 0, 0, 5, proces, largura, altura));
+        proces.addObjeto(new ObInimigo2(300, 50, 2, 0, 0, 7, proces, largura, altura));
+        proces.addObjeto(new ObInimigo2(250, 50, 2, 0, 0, 7, proces, largura, altura));
+        proces.addObjeto(new ObInimigo2(200, 50, 2, 0, 0, 7, proces, largura, altura));
+        proces.addObjeto(new ObInimigo2(150, 50, 2, 0, 0, 7, proces, largura, altura));
+        proces.addObjeto(new ObInimigo2(100, 50, 2, 0, 0, 7, proces, largura, altura));
+        proces.addObjeto(new ObInimigo2(50, 50, 2, 0, 0, 7, proces, largura, altura));
+        proces.addObjeto(new ObInimigo2(300, 100, 2, 0, 0, 7, proces, largura, altura));
+        proces.addObjeto(new ObInimigo2(250, 100, 2, 0, 0, 7, proces, largura, altura));
+        proces.addObjeto(new ObInimigo2(200, 100, 2, 0, 0, 7, proces, largura, altura));
+        proces.addObjeto(new ObInimigo2(150, 100, 2, 0, 0, 7, proces, largura, altura));
+        proces.addObjeto(new ObInimigo2(100, 100, 2, 0, 0, 7, proces, largura, altura));
+        proces.addObjeto(new ObInimigo2(50, 100, 2, 0, 0, 7, proces, largura, altura));
     }
 
     public void insereInimigos3() {
