@@ -7,9 +7,6 @@ import java.awt.Rectangle;
 
 public class ObInimigo extends ObObjeto {
 
-    public ObInimigo() {
-    }
-
     public ObInimigo(int x, int y, int velX, int velY, int id, int vida, Processador proces, int largura, int altura) {
         super(x, y, velX, velY, id, vida, proces, largura, altura);
     }
