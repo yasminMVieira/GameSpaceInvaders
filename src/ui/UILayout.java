@@ -14,6 +14,7 @@ public class UILayout extends JFrame {
     private JButton jButton1;
     private JButton jButton3;
     private JPanel jPanel1;
+    private JLabel info;
 
     public UILayout(Inicio context) {
         initComponents();
@@ -37,6 +38,7 @@ public class UILayout extends JFrame {
         jPanel1 = new JPanel();
         jButton1 = new JButton();
         jButton3 = new JButton();
+        info = new JLabel("Use 'W', 'A', 'S', 'D' and 'SPACE' to play");
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,7 +52,6 @@ public class UILayout extends JFrame {
         jButton1.setFont(new Font("Ubuntu Mono", 1, 18)); // NOI18N
         jButton1.setForeground(new Color(255, 254, 254));
         jButton1.setText("Jogar");
-        jButton1.setAutoscrolls(true);
         jButton1.setBorder(BorderFactory.createLineBorder(new Color(254, 254, 254), 3));
         jButton1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -62,13 +63,16 @@ public class UILayout extends JFrame {
         jButton3.setFont(new Font("Ubuntu Mono", 1, 18)); // NOI18N
         jButton3.setForeground(new Color(254, 254, 254));
         jButton3.setText("Sair");
-        jButton3.setAutoscrolls(true);
         jButton3.setBorder(BorderFactory.createLineBorder(new Color(254, 254, 254), 3));
         jButton3.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
+
+        info.setFont(new Font("Ubuntu Mono", 1, 18));
+        info.setForeground(new Color(255, 254, 254));
+
 
         GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -77,23 +81,31 @@ public class UILayout extends JFrame {
 
         jPanel1Layout.setHorizontalGroup(
                 jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1)
-                        .addComponent(jButton3)
-                        .addContainerGap(0,480)
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 0, 80)
+                        .addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.CENTER)
+                                .addComponent(info)
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jButton1)
+                                .addComponent(jButton3)
+                                )
+                        )
         );
 
         jPanel1Layout.setVerticalGroup(
                 jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(info)
+                        .addContainerGap(0,60)
                         .addGroup(jPanel1Layout.createParallelGroup()
                                 .addComponent(jButton1)
                                 .addComponent(jButton3)
                         )
         );
 
+
         GroupLayout layout = new GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
+
         layout.setHorizontalGroup(
                 layout.createSequentialGroup()
                         .addComponent(jPanel1)
