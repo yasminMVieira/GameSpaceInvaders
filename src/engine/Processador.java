@@ -1,5 +1,6 @@
 package engine;
 
+import ob.InimigosFase2;
 import ob.ObInimigo;
 import ob.ObNave;
 import ob.ObObjeto;
@@ -21,8 +22,12 @@ public class Processador {
             if (tempObjeto instanceof ObInimigo) {
                 e = true;
             }
+            if (tempObjeto instanceof InimigosFase2) {
+                e = true;
+            }
             tempObjeto.tick();
         }
+
         if (p == 0) {
             derrota();
         }

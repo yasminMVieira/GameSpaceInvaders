@@ -9,7 +9,7 @@ public class Jogo extends Canvas implements Runnable {
 
     private boolean ativo;
     private Processador proces;
-    private double taxaUpdate = 1.0d/30.0d;
+    private double taxaUpdate = 1.0d/50.0d;
 
     private long proxStats;
     private int fps, ups;
