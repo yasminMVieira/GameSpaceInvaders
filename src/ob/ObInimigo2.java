@@ -13,7 +13,7 @@ import java.awt.Rectangle;
 
         @Override
         public void render(Graphics g) {
-            Color corInimigo = new Color(222, 14, 14, 255);
+            Color corInimigo = new Color(220, 21, 0, 255);
             g.setColor(corInimigo);
             g.fillRect(x - 16, y + 18, 3, 6);
             g.fillRect(x - 13, y + 18, 3, 6);
