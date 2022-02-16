@@ -88,7 +88,7 @@ public class Inicio {
         this.janela = new UIJogo(largura, altura, jogo, this);
         proces.setJanela(janela);
 
-        proces.addObjeto(new ObNave((largura / 2) + 32, altura - 64, 1, 10, proces, largura, altura));
+        proces.addObjeto(new ObNave((largura / 2) + 32, altura - 64, 1, 6, proces, largura, altura));
 
         insereInimigos1();
         start();
