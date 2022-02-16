@@ -2,6 +2,7 @@ package engine;
 
 import ob.ObInimigo;
 import ob.ObInimigo2;
+import ob.ObInimigo3;
 import ob.ObNave;
 import ob.ObObjeto;
 import ui.UIJogo;
@@ -23,6 +24,9 @@ public class Processador {
                 e = true;
             }
             if (tempObjeto instanceof ObInimigo2) {
+                e = true;
+            }
+            if (tempObjeto instanceof ObInimigo3) {
                 e = true;
             }
             tempObjeto.tick();

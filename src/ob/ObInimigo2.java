@@ -47,8 +47,31 @@ import java.awt.Rectangle;
         }
 
         @Override
+        public void colisao() {
+            if (this.getHitBox().intersects(new Rectangle(0, altura - 200, largura, altura))) {
+                proces.setP(0);
+            }
+            if (this.getHitBox().intersectsLine(0, 0, 0, altura)) {
+                this.setVelX((-1) * velX);
+                this.setY(y + 100);
+            }
+            if (this.getHitBox().intersectsLine(largura - 16, 0, largura - 16, altura)) {
+                this.setVelX((-1) * velX);
+                this.setY(y + 100);
+            }
+            for (int i = 0; i < proces.getObjeto().size(); i++) {
+                ObObjeto tempObjeto = proces.getObjeto().get(i);
+                if (tempObjeto.getId() != this.id && tempObjeto.getId() != 4) {
+                    if (tempObjeto.getHitBox().intersects(this.getHitBox())) {
+                        this.vida--;
+                    }
+                }
+            }
+        }
+
+        @Override
         public void atirar() {
-            ObProjetil proj = new ObProjetil(x, y + 34, 0, 10, 4, 2, proces, largura, altura);
+            ObProjetil proj = new ObProjetil(x, y + 34, 0, 7, 4, 2, proces, largura, altura);
             proces.addObjeto(proj);
         }
 

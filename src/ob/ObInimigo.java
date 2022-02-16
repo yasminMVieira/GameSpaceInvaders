@@ -100,11 +100,11 @@ public class ObInimigo extends ObObjeto {
         }
         if (this.getHitBox().intersectsLine(0, 0, 0, altura)) {
             this.setVelX((-1) * velX);
-            this.setY(y + 100);
+            this.setY(y + 50);
         }
         if (this.getHitBox().intersectsLine(largura - 16, 0, largura - 16, altura)) {
             this.setVelX((-1) * velX);
-            this.setY(y + 100);
+            this.setY(y + 50);
         }
         for (int i = 0; i < proces.getObjeto().size(); i++) {
             ObObjeto tempObjeto = proces.getObjeto().get(i);
