@@ -6,3 +6,7 @@ Utilize os comandos 'W', 'A', 'S', 'D' para mover a nave e 'SPACE' para atirar. 
 ➡ Caso não possua o Java instalado, baixe pelo link:
 
 https://www.java.com/pt-BR/download/
+
+➡ JDK:
+
+https://www.oracle.com/br/java/technologies/downloads/#jdk21-windows
